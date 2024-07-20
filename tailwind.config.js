@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'prof-bg':'url("src/components/images/ton2.jpg")',
-        'nav-bg':'url("src/components/images/bg-nav.jpg")',
-        'footer-bg':'url("src/components/images/footer-bg.jpg")',
+        'prof-bg':'url("./images/ton2.jpg")',
+        'nav-bg':'url("./images/bg-nav.jpg")',
+        'footer-bg':'url("./images/footer-bg.jpg")',
       }, 
     },
   },
