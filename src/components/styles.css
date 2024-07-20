@@ -60,7 +60,7 @@ body{
     @apply text-green-500 hover:text-orange-700
 }
 .personal-info .info-image{
-    @apply bg-prof-bg bg-cover sm:bg-top bg-center inset-0 opacity-80 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-md rounded-full shadow-inner shadow-green-500
+    @apply bg-prof-bg bg-cover sm:bg-top bg-center inset-0 sm:opacity-80 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-md rounded-full shadow-inner shadow-green-500
 }   
 .my-proj{
     @apply text-2xl sm:text-3xl  text-center mt-8 pt-20 sm:pt-28 sm:pb-10 text-orange-600 font-bold 
@@ -75,7 +75,7 @@ body{
     @apply mx-auto w-fit
 } 
 .projects .project .project-image img{
-    @apply rounded-md w-80 sm:w-[25rem] h-80 sm:h-[25rem] inset-0 bg-black opacity-80 object-center object-cover border-2 border-b-0 border-green-600 hover:border-orange-600
+    @apply rounded-md w-80 sm:w-[25rem] h-80 sm:h-[25rem] inset-0 bg-black sm:opacity-80 object-center object-cover border-2 border-b-0 border-green-600 hover:border-orange-600
 }
 .projects .project .project-info{
     @apply px-2 flex flex-col pb-3 border-2 border-green-600 hover:border-orange-600 border-t-0 rounded-2xl rounded-t-md
