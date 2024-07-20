@@ -151,7 +151,7 @@ body{
 }
 /* footer */
 .footer{
-    @apply px-2 py-5 sm:py-10 my-4 mx-auto min-w-[205px] bg-footer-bg bg-cover shadow-2xl shadow-orange-600 rounded-t-3xl transition-all
+    @apply px-2 py-6 sm:py-10 my-4 mx-auto min-w-[205px] bg-footer-bg bg-cover shadow-2xl shadow-orange-600 rounded-t-3xl transition-all
 }
 .footer .hire-me{
     @apply flex flex-col gap-2 sm:gap-6 mx-auto 
