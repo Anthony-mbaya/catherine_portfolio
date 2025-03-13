@@ -1,29 +1,79 @@
-import cruxBlissDesktopImg from './images/crux_bliss-image.jpg'; 
-import movieDesktopImg from './images/movie-image.jpg';
-import finance_marger from './images/finance-merger.jpg';
+import cruxBlissDesktopImg from '/images/crux_bliss-image.jpg';
+import movieDesktopImg from '/images/movie-image.jpg';
+import finance_marger from '/images/finance-merger.jpg';
+import cruxFurgeImage from '/images/crux_furge.jpg'
+import charityAppImage from '/images/charity_image.jpg'
 export const data = [
+  {
+    id: 1,
+    projName:"Finance_Merger",
+    projGithub:"https://github.com/Anthony-mbaya/finance-management-app",
+    projVercel:"https://finance-management-app.vercel.app/",
+    projImg:finance_marger,
+    projDesc:"Design of a finance merger app",
+    stack:"JavaScript, React, TailwindCSS"
+},
+  {
+    id: 2,
+    projName:"Crux_Furge",
+    projGithub:"https://github.com/Anthony-mbaya/CruxFurge-NextJs",
+    projVercel:"https://crux-furge-next-js.vercel.app/",
+    projImg:cruxFurgeImage,
+    projDesc:"An online content management site create and share posts on events",
+    stack:"TypeScript, NextJS, Sanity, Setry",
+},
+{
+  id: 3,
+  projName:"Online Charity App",
+  projGithub:"https://github.com/Anthony-mbaya/charity-site",
+  projVercel:"https://charity-site-seven.vercel.app/",
+  projImg:charityAppImage,
+  projDesc:"An online website that allows donations to charity oragnization",
+  stack:"JavaScript, React",
+},
     {
-        id: 1,
+        id: 4,
         projName:"Crux_Bliss_Comfort",
         projGithub:"https://github.com/Anthony-mbaya/Crux_Bliss_Comfort",
         projVercel:"https://crux-bliss-comfort.vercel.app/",
-        projImg:cruxBlissDesktopImg, 
+        projImg:cruxBlissDesktopImg,
         projDesc:"A website for a company that sells mattresses and other furniture.",
+        stack:"JavaScript, React",
     },
     {
+      id: 5,
+      projName:"Movie_App",
+      projGithub:"https://github.com/Anthony-mbaya/movie-app-react",
+      projVercel:"https://movie-app-react-js8x.vercel.app/",
+      projImg:movieDesktopImg,
+      projDesc:"Movie app users can search different movies",
+      stack:"JavaScript, React",
+  },
+]
+export const services = [
+    {
+        id: 1,
+        title: 'Custom Web Application Development',
+        description: 'Build fully customized, responsive, and scalable web applications using modern technologies like React, Django, NextJS, TailwindCSS and Docker.',
+      },
+      {
         id: 2,
-        projName:"Movie_App",
-        projGithub:"https://github.com/Anthony-mbaya/movie-app-react",
-        projVercel:"https://movie-app-react-js8x.vercel.app/",
-        projImg:movieDesktopImg, 
-        projDesc:"A website that allows users to search for movies and view their details.",
-    },
-    {
+        title: 'Frontend Development',
+        description: 'Create stunning, user-friendly interfaces with React, TailwindCSS, and Next.js, ensuring seamless user experiences across all devices.',
+      },
+      {
         id: 3,
-        projName:"Finance_Merger",
-        projGithub:"https://github.com/Anthony-mbaya/finance-management-app",
-        projVercel:"https://finance-management-app.vercel.app/",
-        projImg:finance_marger, 
-        projDesc:"Design of a finance merger app",
-    }, 
-] 
+        title: 'Backend Development',
+        description: 'Develop robust and secure backend systems with Python, Django, and Django REST Framework (DRF).',
+      },
+      {
+        id: 4,
+        title: 'RESTful API Development',
+        description: 'Design and implement RESTful APIs for seamless communication between frontend and backend systems, ensuring scalability and security.',
+      },
+      {
+        id: 5,
+        title: 'DevOps & Deployment(learning)',
+        description: 'Set up CI/CD pipelines, containerize applications using Docker, and deploy them to cloud platforms like AWS or Vercel.',
+      },
+]

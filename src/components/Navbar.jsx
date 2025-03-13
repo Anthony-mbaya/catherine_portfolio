@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-import { FiMenu, FiXSquare } from "react-icons/fi";
+import { FiMenu, FiXSquare, FiArrowUpRight } from "react-icons/fi";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
-export const Navbar = ({ scrollTo, homeref, aboutref, techref,projectsref }) => {
+export const Navbar = ({
+  scrollTo,
+  homeref,
+  servicesref,
+  aboutref,
+  techref,
+  projectsref,
+}) => {
   const [showMenu, setShowMenu] = useState(false);
   const handleMenu = () => {
     setShowMenu(!showMenu);
@@ -12,9 +20,13 @@ export const Navbar = ({ scrollTo, homeref, aboutref, techref,projectsref }) => 
       <h1 className="name">Tonny's Portfolio</h1>
       <ul className="nav-links">
         <li onClick={() => scrollTo(homeref)}> Home</li>
-        <li onClick={() => scrollTo(aboutref)}>About</li>
+        <li onClick={() => scrollTo(servicesref)}> Services</li>
+        <li onClick={() => scrollTo(projectsref)}> Work</li>
         <li onClick={() => scrollTo(techref)}> Technologies</li>
-        <li onClick={() => scrollTo(projectsref)}> Projects</li>
+        <li onClick={() => scrollTo(aboutref)}>About</li>
+        <Link to={'/hire_me'} className="border-2 hover:bg-white px-2 rounded-md flex items-center justify-center">
+           Hire Me <FiArrowUpRight />
+        </Link>
       </ul>
       <span className="menu-icon">
         <FiMenu
@@ -40,11 +52,19 @@ export const Navbar = ({ scrollTo, homeref, aboutref, techref,projectsref }) => 
             <li
               onClick={() => {
                 if (handleMenu) handleMenu();
-                scrollTo(aboutref);
+                scrollTo(servicesref);
+              }}
+            >
+              Services
+            </li>
+            <li
+              onClick={() => {
+                if (handleMenu) handleMenu();
+                scrollTo(projectsref);
               }}
             >
               {" "}
-              About
+              Work
             </li>
             <li
               onClick={() => {
@@ -58,12 +78,15 @@ export const Navbar = ({ scrollTo, homeref, aboutref, techref,projectsref }) => 
             <li
               onClick={() => {
                 if (handleMenu) handleMenu();
-                scrollTo(projectsref);
+                scrollTo(aboutref);
               }}
             >
               {" "}
-              Projects
+              About
             </li>
+            <Link to={'/hire_me'} className="flex items-center gap-2 text-orange-400">
+              Hire Me <FiArrowUpRight />
+            </Link>
           </ul>
         </div>
       )}

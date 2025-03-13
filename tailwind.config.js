@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'prof-bg':'url("./images/ton2.jpg")',
-        'nav-bg':'url("./images/bg-nav.jpg")',
-        'footer-bg':'url("./images/footer-bg.jpg")',
-      }, 
+        'prof-bg':'url("/images/ton2.jpg")',
+        'nav-bg':'url("/images/bg-nav.jpg")',
+        'footer-bg':'url("/images/footer-bg.jpg")',
+      },
     },
   },
   plugins: [],

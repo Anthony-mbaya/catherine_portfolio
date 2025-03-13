@@ -1,18 +1,18 @@
 body{
-    @apply bg-slate-950 text-white h-screen 
+    @apply bg-slate-950 text-white h-screen
 }
 .nav-wrapper{
-    @apply w-full min-w-[199px] bg-nav-bg bg-opacity-90 flex justify-between items-center px-5 py-4 sm:py-7 fixed shadow-lg shadow-black rounded-br-xl sm:rounded-b-xl mx-auto
+    @apply w-full min-w-[199px] bg-nav-bg bg-opacity-90 z-10 flex justify-between items-center py-4 px-4 sm:py-7 fixed shadow-lg shadow-black rounded-br-xl sm:rounded-b-xl mx-auto
 }
 .nav-wrapper .name{
-    @apply text-white text-xl sm:text-3xl font-extrabold sm:font-serif 
+    @apply text-white text-xl sm:text-3xl font-extrabold sm:font-serif
 }
 .nav-wrapper .nav-links{
-    @apply text-white hidden sm:flex gap-4 font-semibold font-sans text-lg sm:pr-16 md:pr-32 lg:pr-52
+    @apply text-white hidden sm:flex gap-4 font-semibold font-sans text-lg
 }
 .nav-wrapper .nav-links li{
     @apply cursor-pointer hover:text-orange-600 focus:text-green-700 sm:text-xl
-} 
+}
 .menu-icon{
     @apply text-white block sm:hidden
 }
@@ -20,20 +20,20 @@ body{
     @apply w-8 h-8 font-bold cursor-pointer hover:text-slate-300
 }
 .menu-overlay{
-    @apply fixed top-[4rem] left-0 h-full bg-black opacity-85 text-white rounded-tr-xl flex flex-row-reverse px-3 py-7 sm:hidden
+    @apply fixed top-[4rem] left-0 w-full h-[80%] bg-black opacity-85 text-white rounded-tr-xl flex flex-row-reverse justify-center px-3 py-7 sm:hidden
 }
 .menu-overlay ul li{
     @apply cursor-pointer text-lg font-semibold py-2 hover:text-green-700
-} 
-/* content */ 
+}
+/* content */
 .content-container{
-    @apply min-w-[205px] 
+    @apply min-w-[205px]
 }
 .content-wrapper{
     @apply pt-[5rem]
 }
 .personal-info{
-    @apply flex flex-col w-fit mx-auto gap-3 sm:flex-row-reverse sm:my-10 
+    @apply flex flex-col w-fit mx-auto gap-3 sm:flex-row-reverse sm:my-10
 }
 .personal-info .info-text{
     @apply flex flex-col gap-4 px-2 justify-start sm:justify-center
@@ -44,8 +44,12 @@ body{
 .personal-info .info-text .top-text h1{
     @apply flex justify-center items-center gap-2 text-3xl sm:text-[3rem] sm:px-3
 }
+
 .personal-info .info-text .top-text h1 .lap{
     @apply w-10 h-10 sm:w-14 sm:h-14
+}
+.personal-info .info-text .mid-text p{
+    @apply text-lg sm:text-xl text-gray-500 sm:px-3
 }
 .personal-info .info-text .bottom-text{
     @apply text-xl sm:px-3 sm:text-[2rem] sm:mt-5
@@ -60,52 +64,88 @@ body{
     @apply text-green-500 hover:text-orange-700
 }
 .personal-info .info-image{
-    @apply bg-prof-bg bg-cover sm:bg-top bg-center inset-0 sm:opacity-80 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-md rounded-full shadow-inner shadow-green-500
-}   
-.my-proj{
-    @apply text-2xl sm:text-3xl  text-center mt-8 pt-20 sm:pt-28 sm:pb-10 text-orange-600 font-bold 
+    @apply bg-prof-bg bg-cover sm:bg-top bg-center inset-0 sm:opacity-90 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-md rounded-full shadow-inner shadow-green-500
+}
+.insp{
+    @apply w-fit mx-auto
+}
+.insp h2{
+    @apply text-gray-500 text-center
+}
+.insp h3{
+    @apply text-gray-100 text-center text-[2rem] pt-9
+}
+.insp .services{
+    @apply container flex flex-col sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 py-5
+}
+.insp .services .service{
+    @apply flex flex-col justify-between border border-orange-400 rounded-lg px-3 py-4 w-fit mx-auto sm:w-4/5 md:w-5/6 bg-gradient-to-tr from-slate-950 via-slate-800 to-orange-950
+}
+.insp .services .service span h4{
+    @apply text-center text-[1.4rem]
+}
+.insp .services .service span p{
+    @apply text-gray-200 py-2
+}
+.insp .services .service .code{
+    @apply text-sm flex items-center justify-between text-gray-300 bg-slate-950 px-1 py-1 rounded-md
+}
+.insp-btns{
+    @apply w-fit mx-auto
+}
+.insp-btns a, Link{
+    @apply text-green-500 hover:text-orange-700 border flex gap-2 items-center justify-center rounded-md px-2 py-2
+}
+.ref{
+    @apply text-2xl sm:text-3xl  text-center mt-8 pt-20 sm:pt-28 sm:pb-10
 }
 .projects{
-    @apply mt-4 w-fit mx-auto px-3 flex flex-col gap-5 items-center justify-center sm:grid sm:grid-cols-2 md:grid-cols-3 lg:gap-20 sm:gap-8  
+    @apply container w-fit mx-auto px-3 flex flex-col gap-5 items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:gap-20 sm:gap-8
 }
 .projects .project{
-    @apply flex flex-col gap-2 w-fit sm:mx-auto shadow-lg shadow-green-800 rounded-b-2xl hover:shadow-orange-600 transition-all
+    @apply flex flex-col gap-2 w-fit sm:mx-auto rounded-b-2xl transition-all
 }
 .projects .project .project-image{
     @apply mx-auto w-fit
-} 
+}
 .projects .project .project-image img{
-    @apply rounded-md w-80 sm:w-[25rem] h-80 sm:h-[25rem] inset-0 bg-black sm:opacity-80 object-center object-cover border-2 border-b-0 border-green-600 hover:border-orange-600
+    @apply rounded-md  inset-0 bg-black sm:opacity-80 object-center object-cover
 }
 .projects .project .project-info{
-    @apply px-2 flex flex-col pb-3 border-2 border-green-600 hover:border-orange-600 border-t-0 rounded-2xl rounded-t-md
+    @apply flex flex-row justify-between
 }
 .projects .project .project-info h2{
     @apply font-bold text-xl text-orange-600 opacity-85 hover:opacity-100
 }
 .projects .project .project-info span{
-    @apply flex w-fit mx-auto gap-3 mt-3
+    @apply flex w-fit justify-end gap-3
 }
 .projects .project .project-info span button{
-    @apply px-3 sm:px-5 py-2 text-center rounded-lg hover:bg-slate-900 hover:transition-all 
+    @apply text-center rounded-lg hover:bg-slate-900 hover:transition-all
 }
 .projects .project .project-info span .vercel{
-    @apply border-2 border-white border-b-green-600 border-r-green-600 border-t-orange-600 border-l-orange-600 
+    @apply bg-slate-900 px-2 hover:bg-slate-800 py-1
 }
 .projects .project .project-info span .github{
-    @apply bg-transparent border-2 border-white
+    @apply bg-slate-900 px-2 hover:bg-slate-800 py-1
 }
 .projects .project .project-info span button a{
     @apply flex gap-2 items-center justify-center text-slate-200 font-semibold
 }
+.projects .project .desc{
+    @apply py-1 px-1 bg-slate-900
+}
+.projects .project .desc .stack{
+    @apply py-1 w-fit font-semibold text-gray-100 bg-slate-950 px-2 rounded-md animate-pulse
+}
 .link-icons{
-    @apply w-6 h-6
+    @apply w-5 h-5
 }
 .technologies{
     @apply my-4 px-2
 }
 .technologies .technologies-list{
-    @apply flex flex-col gap-7 w-fit mx-auto sm:grid sm:grid-cols-2 md:grid-cols-3 
+    @apply flex flex-col gap-7 w-fit mx-auto sm:grid sm:grid-cols-2 md:grid-cols-3
 }
 .technologies .technologies-list li{
     @apply border-t-2 flex flex-col sm:gap-3 border-orange-600 cursor-context-menu shadow-md shadow-green-500 rounded-2xl px-2 py-4 sm:w-[25rem] sm:h-60 sm:p-3 md:w-[20rem] lg:w-[25rem]
@@ -120,7 +160,7 @@ body{
     @apply text-2xl font-bold text-green-600
 }
 .technologies .technologies-list li h1{
-    @apply text-lg font-bold flex items-center gap-2 text-slate-500
+    @apply text-lg font-bold flex flex-wrap items-center gap-2 text-slate-500
 }
 .technologies .technologies-list li p{
     @apply text-lg text-slate-200
@@ -129,32 +169,35 @@ body{
     @apply my-2 sm:mb-24 px-2 sm:w-fit mx-auto sm:flex flex-row gap-4 justify-start items-start
 }
 .about .about-text{
-    @apply text-lg flex flex-col sm:gap-4 
+    @apply text-lg flex flex-col sm:gap-4 sm:w-6/12
 }
 .about .about-text span{
     @apply border-t-4 sm:border-2 px-4 sm:px-2 py-4 sm:py-5 sm:border-l-0 sm:rounded-l-none rounded-lg border-opacity-50 sm:border-opacity-50 transition-all border-orange-600 hover:border-green-600 shadow-inner
 }
-.about .about-text span strong{
-    @apply text-slate-700 text-xl 
+.about .about-text span p{
+    @apply text-slate-400 text-[0.9rem]
 }
 .about .education{
-    @apply flex flex-col gap-1 mt-3 px-4 sm:mt-0 border-t-4 sm:border-2 sm:border-b-0 sm:py-4 sm:px-8 rounded-xl sm:h-64 border-green-600 pt-4 sm:border-orange-600 hover:border-green-600 shadow-inner border-opacity-50 sm:border-opacity-50
+    @apply flex flex-col gap-1 mt-3 px-4 sm:mt-0 border-t-4 sm:border-2 sm:border-b-0 sm:py-4 sm:px-8 rounded-xl border-green-600 pt-4 sm:border-orange-600 hover:border-green-600 shadow-inner border-opacity-50 sm:border-opacity-50
 }
 .about .education h2{
-    @apply text-xl sm:text-3xl font-bold text-green-600
-} 
+    @apply text-xl sm:text-2xl font-extralight text-green-600
+}
 .about .education ul li{
-    @apply text-slate-400 sm:text-2xl font-bold flex gap-3
+    @apply text-slate-400 sm:text-xl font-extralight flex gap-3
 }
 .about .education ul li a{
-    @apply text-green-600 hover:text-blue-600 cursor-pointer underline underline-offset-4 
+    @apply text-green-600 hover:text-blue-600 cursor-pointer flex items-center
+}
+.about .education .get-btn{
+    @apply flex gap-1 items-center justify-center border border-orange-600 hover:border-green-600 text-white font-bold py-2 rounded-md
 }
 /* footer */
 .footer{
     @apply px-2 py-6 sm:py-10 my-4 mx-auto min-w-[205px] bg-footer-bg bg-cover shadow-2xl shadow-orange-600 rounded-t-3xl transition-all
 }
 .footer .hire-me{
-    @apply flex flex-col gap-2 sm:gap-6 mx-auto 
+    @apply flex flex-col gap-2 sm:gap-6 mx-auto
 }
 .footer .hire-me h1{
     @apply text-xl sm:text-2xl text-green-600 text-center font-extralight
@@ -182,4 +225,38 @@ body{
 }
 .footer .handles ul li a{
     @apply flex flex-row-reverse justify-center items-center gap-1
+}
+/* hire external page */
+.hire{
+    @apply container mx-auto px-5 py-5
+}
+.hire h1, .hire h2{
+    @apply text-[2rem] pt-5 flex items-center
+}
+.hire ul{
+    @apply flex flex-col px-10 gap-3 sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10
+}
+.hire p{
+    @apply text-center py-4
+}
+.hire form{
+    @apply container px-3 flex flex-col sm:flex-row justify-between bg-white w-full text-slate-950 sm:gap-3
+}
+.hire form .details{
+    @apply flex flex-col w-full py-2 items-center justify-evenly sm:justify-start gap-9
+}
+.hire form .details input{
+    @apply bg-slate-200 text-sm text-slate-950 px-2 py-3 rounded-md w-full text-center
+}
+.hire form .message{
+    @apply flex flex-col w-full py-2 items-center justify-evenly gap-4
+}
+.hire form .message textarea{
+    @apply bg-slate-200 text-sm text-slate-950 px-2 py-3 rounded-md w-full text-center
+}
+.hire form .message button{
+    @apply bg-green-700 hover:bg-green-800 w-full py-3 rounded-md text-white
+}
+.hire h5{
+    @apply text-center py-20
 }
