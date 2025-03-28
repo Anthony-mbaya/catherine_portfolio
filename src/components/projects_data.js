@@ -10,7 +10,7 @@ export const data = [
     projGithub:"https://github.com/Anthony-mbaya/finance-management-app",
     projVercel:"https://finance-management-app.vercel.app/",
     projImg:finance_marger,
-    projDesc:"Design of a finance merger app",
+    projDesc:"Design of a finance merger app that is very responsive to both mobile and desktop.",
     stack:"JavaScript, React, TailwindCSS"
 },
   {

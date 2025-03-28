@@ -100,7 +100,7 @@ body{
     @apply text-2xl sm:text-3xl  text-center mt-8 pt-20 sm:pt-28 sm:pb-10
 }
 .projects{
-    @apply container w-fit mx-auto px-3 flex flex-col gap-5 items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:gap-20 sm:gap-8
+    @apply container w-fit mx-auto flex flex-col gap-5 items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:gap-20 sm:gap-8
 }
 .projects .project{
     @apply flex flex-col gap-2 w-fit sm:mx-auto rounded-b-2xl transition-all
