@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { data, services } from "./projects_data";
-import { FaLaptopCode, FaJsSquare, FaReact, FaPython, FaDocker } from "react-icons/fa";
+import { FaLaptopCode, FaJsSquare, FaReact, FaPython, FaDocker, FaAws, FaPhp } from "react-icons/fa";
 import {
   BiLogoTailwindCss,
   BiLogoGit,
@@ -13,7 +13,7 @@ import {
 } from "react-icons/bi";
 import { FiArrowUpRight, FiCode } from "react-icons/fi";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiCreatereactapp, SiVite } from "react-icons/si";
+import { SiCreatereactapp, SiDjango, SiVercel, SiVite } from "react-icons/si";
 import { FaGithubAlt } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -29,6 +29,7 @@ export const Content = ({
   aboutref,
 }) => {
   const resumeUrl = "/files/Developer Tonny Resume.pdf";
+  const cvUrl = "/files/ANTHONY MBAYA CV.pdf"
   return (
     <div className="content-container">
       <div className="content-wrapper" ref={homeref}>
@@ -97,6 +98,9 @@ export const Content = ({
             })}
           </div>
           <div className="insp-btns">
+          <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+              View CV <FiArrowUpRight />
+            </a>
             <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
               View Resume <FiArrowUpRight />
             </a>
@@ -150,20 +154,22 @@ export const Content = ({
             <li>
               <h2>Languages</h2>
               <h1>
-                JavaScript <FaJsSquare className="tech-icons" /> Python{" "}
-                <FaPython className="tech-icons" />
+              Python <FaPython className="tech-icons" />
+                JavaScript <FaJsSquare className="tech-icons" />
+                PHP <FaPhp className="tech-icons" />
               </h1>
               <p>
-                I use this as my <strong>primary language</strong> in developing
-                frontend apps.
+                I use these as my <strong>primary language</strong> in developing
+               applications.
               </p>
             </li>
             <li>
               <h2>Frameworks</h2>
               <h1>
-                ReactJS <FaReact className="tech-icons" />  TailwindCss{" "}
-                <BiLogoTailwindCss className="tech-icons" />
+                Django <SiDjango className="tech-icons" />
+                ReactJS <FaReact className="tech-icons" />
                 NextJS <RiNextjsFill className="tech-icons" />
+                TailwindCss <BiLogoTailwindCss className="tech-icons" />
               </h1>
               <p>
                 Make my development easier and classic with it's vast{" "}
@@ -172,12 +178,13 @@ export const Content = ({
             </li>
             <li>
               <h2>Tools</h2>
-              <h1>Vite <SiVite className="tech-icons" />
+              <h1>
+              Docker <FaDocker className="tech-icons" />
+                Vite <SiVite className="tech-icons" />
                CRA <SiCreatereactapp className="tech-icons" />
-               Docker <FaDocker className="tech-icons" />
                </h1>
               <p>
-                I use this tools often in running my development as well as to
+                I use these tools often in running my development as well as to
                 fasten completion.
               </p>
             </li>
@@ -189,7 +196,17 @@ export const Content = ({
               </h1>
               <p>
                 I use Git is a version control system for tracking changes in
-                computer files and coordinating my work along.{" "}
+                computer files and coordinating my work along and Github for hosting my code.{" "}
+              </p>
+            </li>
+            <li>
+              <h2>Hosting</h2>
+              <h1>Vercel <SiVercel className="tech-icons" />
+               AWS <FaAws className="tech-icons" />
+               </h1>
+              <p>
+                I use these hosting sites in hosting my softwares online.
+                Cloud hosting and serverless functions. They provide affordable services.
               </p>
             </li>
           </ul>
