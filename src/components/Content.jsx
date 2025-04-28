@@ -29,7 +29,7 @@ export const Content = ({
   aboutref,
 }) => {
   const resumeUrl = "/files/Developer Tonny Resume.pdf";
-  const cvUrl = "/files/ANTHONY MBAYA CV.pdf"
+  const cvUrl = "/files/ANTHONY_MBAYA_CV.pdf"
   return (
     <div className="content-container">
       <div className="content-wrapper" ref={homeref}>
