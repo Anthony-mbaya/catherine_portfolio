@@ -11,17 +11,17 @@ export const Footer = () => {
     <div className="footer">
       <div className="hire-me">
         <h1>
-          <strong>Tonny</strong> is ready to work with you!
+          <strong>Catherine</strong> is ready to work with you!
         </h1>
         <span>
-          <textarea placeholder="Humbly hit my Email Woo -hoo!" />
           <button>
-            <a href="mailto:anthonymwakulila@gmail.com" target="_blank">
+            <a href="mailto:catherinemigwi33@gmail.com" target="_blank">
               Connect! <BiSolidEnvelopeOpen className="tech-icons" />{" "}
             </a>
           </button>
         </span>
       </div>
+      {/*
       <div className="handles">
         <ul>
           <li>
@@ -38,6 +38,7 @@ export const Footer = () => {
           </li>
         </ul>
       </div>
+      */}
     </div>
   );
 };

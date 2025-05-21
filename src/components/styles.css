@@ -1,29 +1,29 @@
 body{
-    @apply bg-slate-950 text-white h-screen
+    @apply bg-[rgb(255,214,224)] text-slate-950 h-screen
 }
 .nav-wrapper{
     @apply w-full min-w-[199px] bg-nav-bg bg-opacity-90 z-10 flex justify-between items-center py-4 px-4 sm:py-7 fixed shadow-lg shadow-black rounded-br-xl sm:rounded-b-xl mx-auto
 }
 .nav-wrapper .name{
-    @apply text-white text-xl sm:text-3xl font-extrabold sm:font-serif
+    @apply text-pink-500 text-xl sm:text-3xl font-extrabold sm:font-sans
 }
 .nav-wrapper .nav-links{
-    @apply text-white hidden sm:flex gap-4 font-semibold font-sans text-lg
+    @apply hidden sm:flex gap-4 font-semibold font-sans text-lg
 }
 .nav-wrapper .nav-links li{
-    @apply cursor-pointer hover:text-orange-600 focus:text-green-700 sm:text-xl
+    @apply cursor-pointer hover:text-pink-500 focus:text-green-700 sm:text-xl
 }
 .menu-icon{
-    @apply text-white block sm:hidden
+    @apply block sm:hidden
 }
 .menu-icon #icon{
-    @apply w-8 h-8 font-bold cursor-pointer hover:text-slate-300
+    @apply w-8 h-8 font-bold cursor-pointer hover:text-pink-500
 }
 .menu-overlay{
     @apply fixed top-[4rem] left-0 w-full h-[80%] bg-black opacity-85 text-white rounded-tr-xl flex flex-row-reverse justify-center px-3 py-7 sm:hidden
 }
 .menu-overlay ul li{
-    @apply cursor-pointer text-lg font-semibold py-2 hover:text-green-700
+    @apply cursor-pointer text-lg font-semibold py-2 hover:text-pink-500
 }
 /* content */
 .content-container{
@@ -39,7 +39,7 @@ body{
     @apply flex flex-col gap-4 px-2 justify-start sm:justify-center
 }
 .personal-info .info-text .top-text{
-    @apply font-bold break-words text-green-500
+    @apply font-bold break-words text-slate-950
 }
 .personal-info .info-text .top-text h1{
     @apply flex justify-center items-center gap-2 text-3xl sm:text-[3rem] sm:px-3
@@ -61,31 +61,31 @@ body{
     @apply flex justify-center items-start gap-4 w-fit mx-auto sm:mx-0 py-3 transition-all
 }
 .personal-info .info-text .bottom-text div .front-handles li a{
-    @apply text-green-500 hover:text-orange-700
+    @apply text-slate-950 hover:text-pink-500
 }
 .personal-info .info-image{
-    @apply bg-prof-bg bg-cover sm:bg-top bg-center inset-0 sm:opacity-90 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-md rounded-full shadow-inner shadow-green-500
+    @apply bg-[url('images/cate_image.jpeg')] bg-cover sm:bg-top bg-center inset-0 sm:opacity-90 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-ss-3xl rounded-full shadow-inner shadow-pink-700
 }
 .insp{
     @apply w-fit mx-auto
 }
 .insp h2{
-    @apply text-gray-500 text-center
+    @apply text-center
 }
 .insp h3{
-    @apply text-gray-100 text-center text-[2rem] pt-9
+    @apply text-center text-[2rem] pt-9
 }
 .insp .services{
     @apply container flex flex-col sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 py-5
 }
 .insp .services .service{
-    @apply flex flex-col justify-between border border-orange-400 rounded-lg px-3 py-4 w-fit mx-auto sm:w-4/5 md:w-5/6 bg-gradient-to-tr from-slate-950 via-slate-800 to-orange-950
+    @apply flex flex-col justify-between border rounded-lg px-3 py-8 w-fit mx-auto sm:w-4/5 md:w-5/6 bg-gradient-to-tr from-pink-500 via-pink-400 to-pink-300
 }
 .insp .services .service span h4{
-    @apply text-center text-[1.4rem]
+    @apply text-center text-[1.4rem] text-slate-950 font-bold
 }
 .insp .services .service span p{
-    @apply text-gray-200 py-2
+    @apply text-slate-950 py-3
 }
 .insp .services .service .code{
     @apply text-sm flex items-center justify-between text-gray-300 bg-slate-950 px-1 py-1 rounded-md
@@ -94,7 +94,7 @@ body{
     @apply w-fit mx-auto flex gap-3
 }
 .insp-btns a, Link{
-    @apply text-green-500 hover:text-orange-700 border flex gap-2 items-center justify-center rounded-md px-2 py-2
+    @apply text-green-500 hover:text-pink-500 border border-slate-950 flex gap-2 items-center justify-center rounded-md px-2 py-2
 }
 .ref{
     @apply text-2xl sm:text-3xl  text-center mt-8 pt-20 sm:pt-28 sm:pb-10
@@ -148,37 +148,37 @@ body{
     @apply flex flex-col gap-7 w-fit mx-auto sm:grid sm:grid-cols-2 md:grid-cols-3
 }
 .technologies .technologies-list li{
-    @apply border flex flex-col justify-between sm:gap-3 cursor-context-menu rounded-2xl px-2 py-4 sm:p-3
+    @apply border border-pink-300 flex flex-col sm:gap-3 cursor-context-menu rounded-ss-3xl px-2 py-4 sm:p-3
 }
 .tech-icons{
     @apply w-6 h-6
 }
 .technologies .technologies-list li:hover{
-    @apply border-white bg-slate-900 transition-all
+    @apply border-pink-500 transition-all
 }
 .technologies .technologies-list li h2{
-    @apply text-2xl font-bold text-green-600
+    @apply text-2xl font-bold text-green-600 flex flex-row items-center gap-2
 }
 .technologies .technologies-list li h1{
     @apply text-lg font-bold flex flex-wrap items-center gap-2 text-slate-500
 }
 .technologies .technologies-list li p{
-    @apply text-lg text-slate-200
+    @apply text-lg text-slate-950
 }
 .about{
-    @apply my-2 sm:mb-24 px-2 sm:w-fit mx-auto sm:flex flex-row gap-4 justify-start items-start
+    @apply container my-2 sm:mb-24 px-2 sm:w-fit mx-auto sm:flex flex-row gap-4 justify-start items-start
 }
 .about .about-text{
     @apply text-lg flex flex-col sm:gap-4 sm:w-6/12
 }
 .about .about-text span{
-    @apply border-t-4 sm:border-2 px-4 sm:px-2 py-4 sm:py-5 sm:border-l-0 sm:rounded-l-none rounded-lg border-opacity-50 sm:border-opacity-50 transition-all border-orange-600 hover:border-green-600 shadow-inner
+    @apply px-4 sm:px-2 py-4 sm:py-5 rounded-lg border-opacity-50 sm:border-opacity-50 transition-all border-orange-600 hover:border-green-600 shadow-inner shadow-pink-500
 }
 .about .about-text span p{
     @apply text-slate-400 text-[0.9rem]
 }
 .about .education{
-    @apply flex flex-col gap-1 mt-3 px-4 sm:mt-0 border-t-4 sm:border-2 sm:border-b-0 sm:py-4 sm:px-8 rounded-xl border-green-600 pt-4 sm:border-orange-600 hover:border-green-600 shadow-inner border-opacity-50 sm:border-opacity-50
+    @apply flex flex-col gap-1 mt-3 px-4 sm:mt-0 border-t-4 sm:border-2 sm:border-b-0 sm:py-4 sm:px-8 rounded-xl border-green-600 pt-4 sm:border-pink-500 shadow-inner border-opacity-50 sm:border-opacity-50
 }
 .about .education h2{
     @apply text-xl sm:text-2xl font-extralight text-green-600

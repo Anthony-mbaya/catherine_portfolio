@@ -53,27 +53,22 @@ export const data = [
 export const services = [
     {
         id: 1,
-        title: 'Custom Web Application Development',
-        description: 'Build fully customized, responsive, and scalable web applications using modern technologies like React, Django, NextJS, TailwindCSS and Docker.',
-      },
+        title: ' Web Application Development',
+        description: 'Build fully customized, responsive, and scalable web applications',
+      }, 
       {
         id: 2,
-        title: 'Frontend Development',
-        description: 'Create stunning, user-friendly interfaces with React, TailwindCSS, and Next.js, ensuring seamless user experiences across all devices.',
+        title: 'Backend Development',
+        description: 'Develop robust and secure backend systems with Python, Java, PHP MySQL',
       },
       {
         id: 3,
-        title: 'Backend Development',
-        description: 'Develop robust and secure backend systems with Python, Django, and Django REST Framework (DRF).',
+        title: 'Database Design',
+        description: 'Crafting structured data systems that grow gracefully with your needs using SQL and NoSQL',
       },
       {
         id: 4,
-        title: 'RESTful API Development',
-        description: 'Design and implement RESTful APIs for seamless communication between frontend and backend systems, ensuring scalability and security.',
-      },
-      {
-        id: 5,
-        title: 'DevOps & Deployment(learning)',
-        description: 'Set up CI/CD pipelines, containerize applications using Docker, and deploy them to cloud platforms like AWS or Vercel.',
-      },
+        title: 'Technical Consulting',
+        description: 'I help you navigate the tech maze with clarity to transform your ideas into scalable technical solutions',
+      }
 ]

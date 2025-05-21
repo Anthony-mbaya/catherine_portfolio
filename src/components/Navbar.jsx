@@ -17,16 +17,17 @@ export const Navbar = ({
   };
   return (
     <div className="nav-wrapper">
-      <h1 className="name">Tonny's Portfolio</h1>
+      <h1 className="name">Catherine Migwi</h1>
       <ul className="nav-links">
         <li onClick={() => scrollTo(homeref)}> Home</li>
         <li onClick={() => scrollTo(servicesref)}> Services</li>
-        <li onClick={() => scrollTo(projectsref)}> Work</li>
+       {/* <li onClick={() => scrollTo(projectsref)}> Work</li>*/}
         <li onClick={() => scrollTo(techref)}> Technologies</li>
         <li onClick={() => scrollTo(aboutref)}>About</li>
-        <Link to={'/hire_me'} className="border-2 hover:bg-white px-2 rounded-md flex items-center justify-center">
+        {/*<Link to={'/hire_me'} className="border-2 hover:bg-white px-2 rounded-md flex items-center justify-center">
            Hire Me <FiArrowUpRight />
         </Link>
+        */}
       </ul>
       <span className="menu-icon">
         <FiMenu
@@ -57,6 +58,7 @@ export const Navbar = ({
             >
               Services
             </li>
+            {/*
             <li
               onClick={() => {
                 if (handleMenu) handleMenu();
@@ -66,6 +68,7 @@ export const Navbar = ({
               {" "}
               Work
             </li>
+            */}
             <li
               onClick={() => {
                 if (handleMenu) handleMenu();
@@ -84,9 +87,11 @@ export const Navbar = ({
               {" "}
               About
             </li>
+            {/*}
             <Link to={'/hire_me'} className="flex items-center gap-2 text-orange-400">
               Hire Me <FiArrowUpRight />
             </Link>
+            */}
           </ul>
         </div>
       )}

@@ -1,35 +1,25 @@
 import React from "react";
 import "./styles.css";
 import { data, services } from "./projects_data";
-import { FaLaptopCode, FaJsSquare, FaReact, FaPython, FaDocker, FaAws, FaPhp } from "react-icons/fa";
 import {
-  BiLogoTailwindCss,
-  BiLogoGit,
-  BiLinkExternal,
-  BiLogoLinkedin,
-  BiLogoGithub,
-  BiLogoTwitter,
-  BiCodeAlt,
-} from "react-icons/bi";
+  FaLaptopCode,
+  FaJsSquare,
+  FaReact,
+  FaPython,
+  FaDocker,
+  FaAws,
+  FaPhp,
+} from "react-icons/fa";
+import { BiLinkExternal, BiCodeAlt, BiEnvelope } from "react-icons/bi";
 import { FiArrowUpRight, FiCode } from "react-icons/fi";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiCreatereactapp, SiDjango, SiVercel, SiVite } from "react-icons/si";
-import { FaGithubAlt } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 //technologies- language-js,framework-reactjs tailwindcss,tools-cra vite ,vcs-git
 //preojs
 //courses certifictes degree
-export const Content = ({
-  homeref,
-  servicesref,
-  projectsref,
-  techref,
-  aboutref,
-}) => {
-  const resumeUrl = "/files/Developer Tonny Resume.pdf";
-  const cvUrl = "/files/ANTHONY_MBAYA_CV.pdf"
+export const Content = ({ homeref, servicesref, techref, aboutref }) => {
+  const resumeUrl = "/files/Catherine Wangari Migwi_Résumé.docx";
   return (
     <div className="content-container">
       <div className="content-wrapper" ref={homeref}>
@@ -37,34 +27,21 @@ export const Content = ({
           <div className="info-text">
             <div className="top-text">
               <h1>
-                Here is! ~Dev Tonny~
-                <FaLaptopCode className="lap" />
+                Hello, <br /><br />
+                I'm Dev. Catherine 
               </h1>
             </div>
             <div className="mid-text">
-              <p>Turning ideas into scalable, user-friendly applications</p>
+              <p>Crafting digital magic with code</p>
             </div>
             <div className="bottom-text">
-              <h2>Full Stack Developer</h2>
+              <h2>Software Developer</h2>
               <div>
                 <ul className="front-handles">
                   <li>
-                    <a
-                      href="https://www.linkedin.com/in/anthony-mwakulila-6a4351244/"
-                      target="_blank"
-                    >
-                      <BiLogoLinkedin className="tech-icons" />
+                    <a href="mailto:catherinemigwi33@gmail.com" target="_blank">
+                      <BiEnvelope className="tech-icons" />
                     </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/Anthony-mbaya" target="_blank">
-                      <BiLogoGithub className="tech-icons" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/crux_ton" target="_blank">
-                      <BiLogoTwitter className="tech-icons" />{" "}
-                    </a>{" "}
                   </li>
                 </ul>
               </div>
@@ -73,13 +50,14 @@ export const Content = ({
           <div className="info-image"></div>
         </div>
         <div className="insp">
-          <h3>Driven by curiosity, powered by code!</h3>
+          <h3>
+            Building elegant solutions that spark joy, one pixel at a time
+          </h3>
           <h2>
-            Full Stack Developer | Turning ideas into scalable, user-friendly
-            applications
+            Code poet & problem solver <span className="text-rose-400">🌸</span>
           </h2>
           <h1 className="ref" ref={servicesref}>
-            What I Do
+            My Services
           </h1>
           <div className="services">
             {services.map((service) => {
@@ -91,21 +69,19 @@ export const Content = ({
                   </span>
 
                   <code className="code">
-                    <BiCodeAlt /> print("Build with Tonny") <BiCodeAlt />
+                    <BiCodeAlt /> print("Build with Cate") <BiCodeAlt />
                   </code>
                 </div>
               );
             })}
           </div>
           <div className="insp-btns">
-          <a href={cvUrl} target="_blank" rel="noopener noreferrer">
-              View CV <FiArrowUpRight />
-            </a>
             <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
               View Resume <FiArrowUpRight />
             </a>
           </div>
         </div>
+        {/*
         <h1 className="ref" ref={projectsref}>
           Latest Work
         </h1>
@@ -146,67 +122,48 @@ export const Content = ({
             </Link>
 </div>
         </section>
+        */}
         <h1 className="ref" ref={techref}>
           Technologies
         </h1>
         <div className="technologies">
           <ul className="technologies-list">
             <li>
-              <h2>Languages</h2>
-              <h1>
-              Python <FaPython className="tech-icons" />
-                JavaScript <FaJsSquare className="tech-icons" />
-                PHP <FaPhp className="tech-icons" />
-              </h1>
+              <h2>
+                Python <FaPython className="tech-icons" />
+              </h2>
+              <h1>Versatile programming for any challenge</h1>
               <p>
-                I use these as my <strong>primary language</strong> in developing
-               applications.
+                Writing clean, efficient code for backend systems, data
+                processing, and automation. Experienced in building scalable
+                solutions with maintainable architecture.
               </p>
             </li>
             <li>
-              <h2>Frameworks</h2>
-              <h1>
-                Django <SiDjango className="tech-icons" />
-                ReactJS <FaReact className="tech-icons" />
-                NextJS <RiNextjsFill className="tech-icons" />
-                TailwindCss <BiLogoTailwindCss className="tech-icons" />
-              </h1>
+              <h2>PHP</h2>
+              <h1>Dynamic web solutions at scale</h1>
               <p>
-                Make my development easier and classic with it's vast{" "}
-                <strong>packages</strong>.
+                Building robust server-side applications with modern practices.
+                Focus on secure, maintainable code for high-performance web
+                systems.
               </p>
             </li>
             <li>
-              <h2>Tools</h2>
-              <h1>
-              Docker <FaDocker className="tech-icons" />
-                Vite <SiVite className="tech-icons" />
-               CRA <SiCreatereactapp className="tech-icons" />
-               </h1>
+              <h2>Java</h2>
+              <h1>Enterprise-grade application development</h1>
               <p>
-                I use these tools often in running my development as well as to
-                fasten completion.
+                Creating reliable, high-performance systems with strong type
+                safety. Experience in building maintainable architectures for
+                complex business logic.
               </p>
             </li>
             <li>
-              <h2>Version Control System</h2>
-              <h1>
-                Git <BiLogoGit className="tech-icons" />{" "}
-                Github <FaGithubAlt className="tech-icons" />
-              </h1>
+              <h2>MySQL</h2>
+              <h1>Structured data management perfected</h1>
               <p>
-                I use Git is a version control system for tracking changes in
-                computer files and coordinating my work along and Github for hosting my code.{" "}
-              </p>
-            </li>
-            <li>
-              <h2>Hosting</h2>
-              <h1>Vercel <SiVercel className="tech-icons" />
-               AWS <FaAws className="tech-icons" />
-               </h1>
-              <p>
-                I use these hosting sites in hosting my softwares online.
-                Cloud hosting and serverless functions. They provide affordable services.
+                Designing efficient database schemas and optimized queries.
+                Focus on data integrity, performance tuning, and secure access
+                patterns.
               </p>
             </li>
           </ul>
@@ -217,20 +174,53 @@ export const Content = ({
         <div className="about">
           <div className="about-text">
             <span>
-              Full_Name: <p>Anthony Mbaya</p>
+              Full_Name: <p>Catherine Migwi</p>
+            </span> 
+            <span>
+              School: <p>Mount Kenya University - MKU</p>
             </span>
             <span>
-              Hobby: <p>Coding,  Hiking,Watching documentaries, Playing card games, Contributing to open-source projects</p>
-            </span>
-            <span>
-              School:{" "}
-              <p>Mount Kenya University - MKU</p>
-            </span>
-            <span>
-              Pursuing(degree):{" "}
+              Bachelors degree:{" "}
               <p>Bachelor of Business and Information Technology - MKU</p>
             </span>
           </div>
+          <div className="education">
+            <div className="flex-1">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                Hi, I'm{" "}
+                <span className="text-pink-500  font-bold">
+                  Catherine
+                </span>
+              </h2>
+
+              <div className=" text-slate-400">
+                <p className="text-lg mb-4">
+                  A passionate software developer who loves turning complex
+                  problems into elegant, user-friendly solutions. With a blend
+                  of technical expertise and creative thinking, I build digital
+                  experiences that are both functional and beautiful.
+                </p>
+
+                <div className="space-y-3">
+                  <p>
+                    <span className="font-medium">My philosophy:</span> Clean
+                    code should read like poetry and work like clockwork.
+                  </p>
+                  <p>
+                    When I'm not coding, you'll find me [personal interest -
+                    e.g., "exploring new coffee shops", "painting watercolors",
+                    or "hiking mountain trails"].
+                  </p>
+                  <p>
+                    Currently focused on [current focus - e.g., "building
+                    accessible web applications", "learning about AI
+                    integration", or "contributing to open-source projects"].
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*}
           <div className="education">
             <h2>Certifications</h2>
             <ul>
@@ -263,7 +253,7 @@ export const Content = ({
               </li>
             </ul>
              <Link to={'/hire_me'} className="get-btn" >Get In Touch <MdEmail size={17} /> </Link>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>
