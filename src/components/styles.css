@@ -64,7 +64,7 @@ body{
     @apply text-slate-950 hover:text-pink-500
 }
 .personal-info .info-image{
-    @apply bg-[url('images/cate_image.jpeg')] bg-cover sm:bg-top bg-center inset-0 sm:opacity-90 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-ss-3xl rounded-full shadow-inner shadow-pink-700
+    @apply bg-prof-bg bg-cover sm:bg-top bg-center inset-0 sm:opacity-90 mx-auto w-52 h-64 sm:w-[40rem] sm:h-[42rem] sm:rounded-ss-3xl rounded-full shadow-inner shadow-pink-700
 }
 .insp{
     @apply w-fit mx-auto

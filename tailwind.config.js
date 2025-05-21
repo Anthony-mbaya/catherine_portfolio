@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'prof-bg':'url("images/cate_image.jpeg")',
+        'prof-bg':'url("/images/cate_image.jpeg")',
         'nav-bg':'url("/images/bg-nav.jpg")',
         'footer-bg':'url("/images/footer-bg.jpg")',
       },
