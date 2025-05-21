@@ -1,3 +1,3 @@
-# MY - PORTFOLIO TONNY -> Anthony Mbaya
+# CATHERINE MIGWI PORTFOLIO
 
-Tells alot of what i know in tech related to frontend
+Tells alot of what i know in tech 
